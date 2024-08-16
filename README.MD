@@ -1,9 +1,11 @@
-naive lib for probability calculation.
-
-You can calc continuous distribution by setting cumulative or density function in
-symbolic format or you can set density function in java native format.
+## Naive lib for probability calculation
+### Continuous distribution
+The library provides the ability to calculate the сontinuous probability by specifying 
+the cumulative or density function in symbolic form or specifying density function in java native form.
 Watch ContinuousDistribution and ContinuousDistributionFactory and tests in this package
 ch.nn.probability.distribution.continuous.
+
 Symbolic calculations restricted by SymJa lib integral calculation possibilities.
 
-You can calc some discrete distributions. Watch DiscreteDistribution implementations and examples in this package ch.nn.probability.distribution.discrete.
+### Discrete distribution
+The library provides the ability to calculate some discrete distributions. Watch DiscreteDistribution implementations and examples in this package ch.nn.probability.distribution.discrete.
