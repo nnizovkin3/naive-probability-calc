@@ -45,8 +45,8 @@ import java.util.function.Function;
  * Numbers are internally represented as <code>int</code> arrays; the <code>int</code>s are interpreted as unsigned numbers.
  */
 public class SchonhageStrassen {
-    private static final int KARATSUBA_THRESHOLD = 80 * 32;   // min #ints for Karatsuba
-    private static final int TOOM_COOK_THRESHOLD = 240 * 32;
+    private static final int KARATSUBA_THRESHOLD = 80;   // min #ints for Karatsuba
+    private static final int TOOM_COOK_THRESHOLD = 240;
     public static final int SCHONHAGE_STRASSEN_THRESHOLD = 200000;
 
     /**
