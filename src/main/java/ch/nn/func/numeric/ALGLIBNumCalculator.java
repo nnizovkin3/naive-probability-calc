@@ -7,7 +7,6 @@ import java.util.function.Function;
 
 import static alglib.alglib.*;
 
-//add
 public class ALGLIBNumCalculator implements NumCalculator {
     @SneakyThrows
     @Override

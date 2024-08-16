@@ -14,7 +14,7 @@ public class NumericUtils {
         return mult(1, n);
     }
 
-    private static BigInteger mult(int start, int end) {
+    public static BigInteger mult(int start, int end) {
         if(end - start >= BOUND) {
             int mid = (end + start) / 2;
             return mult(start, mid).multiply(mult(mid + 1, end));

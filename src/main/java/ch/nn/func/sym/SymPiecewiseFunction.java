@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 
 @Getter
-//for bounded on the start and end functions
 public class SymPiecewiseFunction implements SymFunction {
     private final TreeMap<Double, SymFunction> func;
     private final SymCalculator symCalculator;
@@ -41,6 +40,7 @@ public class SymPiecewiseFunction implements SymFunction {
         return symCalculator.calc(entry.getValue().getDescription(), x);
     }
 
+    //for integrals with finite value on boundary
     @Override
     public SymFunction integrate() {
         double diff = 0d;
