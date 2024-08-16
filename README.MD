@@ -5,7 +5,7 @@ the cumulative or density function in symbolic form or specifying density functi
 Watch ContinuousDistribution and ContinuousDistributionFactory and tests in this package
 ch.nn.probability.distribution.continuous.
 
-Symbolic calculations restricted by SymJa lib integral calculation possibilities.
+Symbolic calculations restricted by SymJa lib symbolic integral calculation possibilities.
 
 ### Discrete distribution
 The library provides the ability to calculate some discrete distributions. Watch DiscreteDistribution implementations and examples in this package ch.nn.probability.distribution.discrete.
