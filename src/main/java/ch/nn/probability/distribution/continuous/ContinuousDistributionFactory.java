@@ -25,8 +25,11 @@ public class ContinuousDistributionFactory {
         return createDistrByDensity(symFunction);
     }
 
-    public ContinuousDistribution createDistrForNum(Function<Double, Double> f, String d, double negInf, double posInf) {
-        NumFunction func = new NumFunction(f, d, numCalculator);
+    public ContinuousDistribution createDistrForNum(Function<Double, Double> f,
+                                                    String description,
+                                                    double negInf,
+                                                    double posInf) {
+        NumFunction func = new NumFunction(f, description, numCalculator);
         NumDensityFunction densityFunction = new NumDensityFunction(func, negInf, posInf);
         NumCumulativeFunction cumulativeFunction = new NumCumulativeFunction(func, negInf);
         return new ContinuousDistribution(densityFunction, cumulativeFunction);

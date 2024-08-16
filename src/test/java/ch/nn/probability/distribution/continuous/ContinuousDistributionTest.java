@@ -25,6 +25,20 @@ public class ContinuousDistributionTest {
     }
 
     @Test
+    void testNumProbabilityCalcWithInfinityInTheMiddle() {
+        ContinuousDistribution distribution = factory.createDistrForNum(x -> x > 0 ? 1/(2*Math.sqrt(x)) : 0,
+                "", -1, 1);
+        assertWithPrecision(1, distribution.probability(-1, 1));
+    }
+
+    @Test
+    void testNumProbabilityCalcWithInfinityAtBoundary() {
+        ContinuousDistribution distribution = factory.createDistrForNum(x -> x > 0 ? 1/(2*Math.sqrt(x)) : 0,
+                "", -1, 1);
+        assertWithPrecision(1, distribution.probability(0, 1));
+    }
+
+    @Test
     void testCase1() {
         ContinuousDistribution distr = factory.createDistrForSymPiecewise(Map.of(Math.PI, "0",
                 Math.PI * 3 / 2, "-cos(x)"), "0");
